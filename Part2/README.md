@@ -7,7 +7,7 @@ From the Module 4 steady-state fits, the temperature susceptibilities are:
 - Heating: $\chi_{T,h}=0.49\ ^\circ\mathrm{C/PWM}$
 - Cooling magnitude: $|\chi_{T,c}|=0.20\ ^\circ\mathrm{C/PWM}$
 
-The corrected room temperature is approximately $T_{\mathrm{amb}}=22^\circ$C. This changes temperature differences and initial errors, but a constant temperature offset does not change the fitted slopes. The Module 4 graph shows about $35^\circ$C at zero PWM; if that point was recorded before the apparatus reached equilibrium, the slopes may also be inaccurate and should be checked with the instructor.
+The corrected room temperature is approximately $T_{\mathrm{amb}}=22^\circ$ C. This changes temperature differences and initial errors, but a constant temperature offset does not change the fitted slopes. The Module 4 graph shows about $35^\circ$ C at zero PWM; if that point was recorded before the apparatus reached equilibrium, the slopes may also be inaccurate and should be checked with the instructor.
 
 The dimensionless loop gain is
 
@@ -31,13 +31,13 @@ Because the Arduino receives integer PWM values, these gains may round to zero f
 
 ## Test procedure
 
-1. Set PWM to zero and let the measured temperature settle near $22^\circ$C.
+1. Set PWM to zero and let the measured temperature settle near $22^\circ$ C.
 2. Enter the chosen $K_p$ in the GUI.
-3. **Heating:** use a setpoint such as $30^\circ$C. Enable P-only mode and confirm positive error, positive signed PWM, `HEAT`, and increasing temperature.
-4. **Cooling:** the instructions require a setpoint slightly below room temperature. The GUI currently permits only $30$--$35^\circ$C, so obtain instructor approval before lowering its setpoint range. With an approved setpoint below $22^\circ$C, confirm negative error, negative signed PWM, `COOL`, and decreasing temperature. A $30^\circ$C setpoint while the block is at $22^\circ$C would command heating, not cooling.
+3. **Heating:** use a setpoint such as $30^\circ$ C. Enable P-only mode and confirm positive error, positive signed PWM, `HEAT`, and increasing temperature.
+4. **Cooling:** the instructions require a setpoint slightly below room temperature. The GUI currently permits only $30$--$35^\circ$ C, so obtain instructor approval before lowering its setpoint range. With an approved setpoint below $22^\circ$ C, confirm negative error, negative signed PWM, `COOL`, and decreasing temperature. A $30^\circ$ C setpoint while the block is at $22^\circ$ C would command heating, not cooling.
 5. Disable P-only mode after confirming each trend. Stop immediately if the temperature moves in the wrong direction.
 
-For a $32.5^\circ$C setpoint, the corrected initial error and estimated open-loop heating PWM are
+For a $32.5^\circ$ C setpoint, the corrected initial error and estimated open-loop heating PWM are
 
 $$
 e_0=32.5-22=10.5^\circ\mathrm C,
