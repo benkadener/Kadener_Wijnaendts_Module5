@@ -35,11 +35,3 @@ $$
 ![Measured and predicted droop versus proportional gain](predicted_vs_measured_droop.png)
 
 Both results show the same main trend: increasing Kₚ decreases the steady-state droop. The measured droop is between 0.32°C and 0.63°C smaller than the simple prediction. This level of disagreement is reasonable because the model uses one constant susceptibility and does not include all heat-transfer effects or measurement uncertainty.
-
-The predicted fraction of the initial error that remains is
-
-$$
-\frac{T_{\mathrm{set}}-T_{\mathrm{ss}}}
-{T_{\mathrm{set}}-T_{\mathrm{amb}}}
-=\frac{1}{1+L}.
-$$

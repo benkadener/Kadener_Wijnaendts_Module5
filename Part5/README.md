@@ -10,15 +10,19 @@ $$
 
 ## Results
 
-Use $K_p=3$ as the existing comparison run. Test $K_p=6$ first, and test $K_p=10$ only if the instructor approves it after reviewing the $K_p=6$ response. The listed $P_0$ values assume a 22 °C start; recalculate them using the actual starting temperature.
+| $K_p$ (PWM/°C) | Settles? | Mean/steady temperature (°C) | Amplitude (°C) | Period (s) | Frequency (Hz) | Saturation? |
+|---:|:---:|---:|---:|---:|---:|:---:|
+| 6 | Yes | 28.24 | N/A | N/A | N/A | No |
+| 10 | Yes | 28.82 | N/A | N/A | N/A | No |
+| 30 | Yes | 29.56 | N/A | N/A | N/A | No |
 
-| $K_p$ (PWM/°C) | Start temp. (°C) | Predicted $P_0$ | Settles? | Mean/steady temp. (°C) | Response shape | PWM behavior | Amplitude (°C) | Period (s) | Frequency (Hz) | Saturates? |
-|---:|---:|---:|:---:|---:|---|---|---:|---:|---:|:---:|
-| 3 | 22.00 | 24 | Yes | 27.10 | Smooth; no sustained oscillations | Initially 24, approximately 9 when settled | N/A | N/A | N/A | No |
-| 6 |  | 48 if starting at 22 °C |  |  |  |  |  |  |  |  |
-| 10 |  | 80 if starting at 22 °C |  |  |  |  |  |  |  |  |
+`N/A` is used because none of the three runs showed sustained oscillations.
 
-Use `N/A` for amplitude, period, and frequency if sustained oscillations do not occur. In **Response shape**, describe whether the response is smooth, overshoots, oscillates, or fails to settle. In **PWM behavior**, record its approximate range and whether it switches rapidly.
+## Response observations
+
+- **Kₚ = 6:** started at 23.75 °C, so P₀ = 6 × |30 − 23.75| = 37.5, which rounds to PWM 38. The response rose smoothly and settled near 28.24 °C. PWM settled near 11 and did not saturate.
+- **Kₚ = 10:** started at 23.60 °C, so P₀ = 10 × |30 − 23.60| = PWM 64. The response was smooth with small measurement fluctuations and settled near 28.82 °C. PWM settled near 12 and did not saturate.
+- **Kₚ = 30:** started at 26.80 °C, so P₀ = 30 × |30 − 26.80| = PWM 96. The response had a small damped transient but no sustained oscillation, then settled near 29.56 °C. PWM settled near 13 and did not saturate.
 
 ## Oscillation measurements
 
@@ -35,9 +39,3 @@ $$
 \qquad
 f=\frac{1}{\tau}.
 $$
-
-## Evidence and conclusion
-
-Save one strip-chart screenshot and the raw data for every tested gain. If no sustained oscillations appear, report the highest gain tested and compare it with the low-gain response: settling temperature, droop, response speed, and PWM behavior.
-
-Stop P-only control and set PWM to zero immediately if oscillations grow, the temperature moves in the wrong direction, PWM behaves unexpectedly, or the run becomes unsafe. Do not proceed to the next gain without supervision and approval.
