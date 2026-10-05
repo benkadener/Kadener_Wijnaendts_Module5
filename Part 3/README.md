@@ -36,18 +36,7 @@ $$
 | 0.50 | 4 |  | 30 |  |  |  |  |
 | 1.00 | 8 |  | 30 |  |  |  |  |
 | 2.00 | 16 |  | 30 |  |  |  |  |
-| 3.00 | 24 |  | 30 |  |  |  |  |
+| 3.00 | 24 | 22 | 30 | 27.10 |  | 9 |  |
 
 In the Notes column, record whether the response settled, oscillated, saturated, or behaved unexpectedly.
 
-## Evidence to save
-
-Save one strip-chart screenshot and one raw CSV file for every gain:
-
-- `part3_Kp_0.25.png` and `part3_Kp_0.25.csv`
-- `part3_Kp_0.50.png` and `part3_Kp_0.50.csv`
-- `part3_Kp_1.00.png` and `part3_Kp_1.00.csv`
-- `part3_Kp_2.00.png` and `part3_Kp_2.00.csv`
-- `part3_Kp_3.00.png` and `part3_Kp_3.00.csv`
-
-After completing the table, plot measured droop versus $K_p$. Stop immediately if the temperature moves in the wrong direction or oscillations grow.
