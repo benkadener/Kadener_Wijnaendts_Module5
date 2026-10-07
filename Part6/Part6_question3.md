@@ -1,4 +1,4 @@
-## Question 3: Loop gain and fractional droop
+# Question 3: Loop Gain and Fractional Droop
 
 All experiments used heating toward a 30 °C setpoint, so the appropriate directional susceptibility is the Module 4 heating value
 
@@ -33,7 +33,9 @@ $$
 | 6.00 | 2.9232 | 1.76 | 0.2200 | 0.2549 | -0.0349 |
 | 10.00 | 4.8720 | 1.18 | 0.1475 | 0.1703 | -0.0228 |
 | 30.00 | 14.6160 | 0.44 | 0.0550 | 0.0640 | -0.0090 |
+| 60.00 | 29.2320 | 0.24 | 0.0300 | 0.0331 | -0.0031 |
+| 120.00 | 58.4640 | 0.10 | 0.0125 | 0.0168 | -0.0043 |
 
-The $K_p=0.25$ run most clearly has small loop gain, with $L=0.1218\ll1$. The $K_p=0.50$ run is also in the low-gain range but is less strongly separated from one. The $K_p=1$ run is intermediate, the $K_p=2$ run is near $L=1$, and the larger gains have $L>1$ and substantially less fractional droop.
+The $K_p=0.25$ run most clearly has small loop gain, with $L=0.1218\ll1$. The $K_p=0.50$ run is also in the low-gain range but is less strongly separated from one. The $K_p=1$ run is intermediate, the $K_p=2$ run is near $L=1$, and the larger gains have $L>1$ and substantially less fractional droop. The $K_p=60$ and $120$ runs are the strongest-feedback cases, with only 3.0% and 1.25% of the initial temperature error remaining.
 
 For every gain, the measured fractional droop is slightly smaller than the one-lump prediction, meaning the measured temperature settled somewhat closer to the setpoint than predicted. Plausible reasons include uncertainty in the true ambient temperature, using a single susceptibility measured over a different temperature/PWM range, PWM rounding at low gains, incomplete settling, nonlinear passive heat transfer, and temperature dependence of TEC properties. The heating susceptibility was used because every run commanded heating; using the cooling susceptibility would not represent these experiments.
