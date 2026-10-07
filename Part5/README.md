@@ -15,6 +15,8 @@ $$
 | 6 | Yes | 28.24 | N/A | N/A | N/A | No |
 | 10 | Yes | 28.82 | N/A | N/A | N/A | No |
 | 30 | Yes | 29.56 | N/A | N/A | N/A | No |
+| 60 | Yes | 29.76 | 3.15 | 9.2 | 0.11 | No |
+| 120 | Yes | 29.76 | 3.15 | 9.2 | 0.11 | No |
 
 `N/A` is used because none of the three runs showed sustained oscillations.
 
