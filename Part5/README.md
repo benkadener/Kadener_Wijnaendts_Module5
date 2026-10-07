@@ -25,3 +25,6 @@ $$
 - **Kₚ = 6:** started at 23.75 °C, so P₀ = 6 × |30 − 23.75| = 37.5, which rounds to PWM 38. The response rose smoothly and settled near 28.24 °C. PWM settled near 11 and did not saturate.
 - **Kₚ = 10:** started at 23.60 °C, so P₀ = 10 × |30 − 23.60| = PWM 64. The response was smooth with small measurement fluctuations and settled near 28.82 °C. PWM settled near 12 and did not saturate.
 - **Kₚ = 30:** started at 26.80 °C, so P₀ = 30 × |30 − 26.80| = PWM 96. The response had a small damped transient but no sustained oscillation, then settled near 29.56 °C. PWM settled near 13 and did not saturate.
+
+## highest gain compared to lowest gain
+The highest gain tested was 30 Kp in which the temperature settled at around 29.56 C. the lowest gain tested was 0.25 Kp which sttled at around 23.35 C. the Kp = 30C response increased tempreature much faster and settled much closer to 30C.
